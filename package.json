@@ -4,7 +4,10 @@
   "description": "MERN Stack with Redux",
   "main": "server.js",
   "scripts": {
-    "start": "node backend/server"
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/marichellebisuna/fullstack_fashion_app/issues"
   },
-  "homepage": "https://github.com/marichellebisuna/fullstack_fashion_app#readme"
+  "homepage": "https://github.com/marichellebisuna/fullstack_fashion_app#readme",
+  "dependencies": {
+    "concurrently": "^6.0.1",
+    "nodemon": "^2.0.7"
+  }
 }
