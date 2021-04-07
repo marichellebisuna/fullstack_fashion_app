@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Button } from 'react-bootstrap';
+import { Card, Button, Image } from 'react-bootstrap';
 import Rating from '../components/Rating';
 import { Link } from 'react-router-dom';
 
@@ -7,7 +7,7 @@ const Product = ({ product }) => {
   return (
     <Card className='rounded my-3 p-3'>
       <Link to={`/product/${product._id}`}>
-        <Card.Img variant='top' src={product.image} fluid />
+        <Image variant='top' src={product.image} fluid />
       </Link>
       <Card.Body>
         <Link to={`/product/${product._id}`}>
