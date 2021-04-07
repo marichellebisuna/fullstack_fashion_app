@@ -21,6 +21,7 @@
   "homepage": "https://github.com/marichellebisuna/fullstack_fashion_app#readme",
   "dependencies": {
     "concurrently": "^6.0.1",
+    "dotenv": "^8.2.0",
     "nodemon": "^2.0.7"
   }
 }

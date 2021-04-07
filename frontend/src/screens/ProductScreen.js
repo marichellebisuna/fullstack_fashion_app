@@ -21,8 +21,7 @@ const ProductScreen = ({ match }) => {
       setProduct(data);
     };
     fetchProduct();
-    // eslint-disable-next-line
-  }, []);
+  }, [match]);
   // const product = products.find((p) => p._id === match.params.id);
   return (
     <>
